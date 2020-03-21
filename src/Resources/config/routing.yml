@@ -1,0 +1,6 @@
+contao_fileusage:
+    path: /contao/fileusage
+    defaults:
+        _scope: backend
+        _token_check: true
+        _controller: ContaoFileUsageBundle:Backend:showFileUsage

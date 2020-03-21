@@ -1,0 +1,51 @@
+{
+    "name": "efficient/contao-fileusage-bundle",
+    "type": "contao-bundle",
+    "version": "1.1",
+    "description": "Contao 4 File Usage Bundle",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "efficient information technologies GmbH",
+            "homepage": "https://www.efficient.it"
+        }
+    ],
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "contao/core-bundle": "~4.1"
+    },
+    "conflict": {
+        "contao/core": "*",
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0",
+        "doctrine/doctrine-cache-bundle": "^1.3",
+        "friendsofphp/php-cs-fixer": "^2.12",
+        "php-http/guzzle6-adapter": "^1.1",
+        "php-http/message-factory": "^1.0.2",
+        "phpunit/phpunit": "^5.7.26",
+        "symfony/phpunit-bridge": "^3.2"
+    },
+    "extra": {
+        "contao-manager-plugin": "Efficient\\ContaoFileUsageBundle\\ContaoManager\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Efficient\\ContaoFileUsageBundle\\": "src/"
+        },
+        "classmap": [
+            "src/Resources/contao/"
+        ],
+        "exclude-from-classmap": [
+            "src/Resources/contao/config/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Efficient\\ContaoFileUsageBundle\\Tests\\": "tests/"
+        }
+    },
+    "support": {
+    }
+}
